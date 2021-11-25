@@ -28,7 +28,9 @@ p {
 img {
 	max-width: 100%;
 }
-
+section a {
+	color: #fff;
+}
 /* navbar */
 
 .navbar {
@@ -79,6 +81,9 @@ img {
 	display: flex;
 	align-items: center;
 }
+.navbar-nav-right li:nth-child(2) {
+	margin: 0 5px;
+}
 /* buttons */
 .btn {
 	cursor: pointer;
@@ -109,4 +114,84 @@ img {
 }
 .btn-dark:hover {
 	background-color: #333;
+}
+/* backgrounds */
+.bg-primary {
+	background-color: var(--color-primary);
+	color: #fff;
+}
+.bg-secondary {
+	background-color: var(--color-secondary);
+	color: #fff;
+}
+.bg-extra {
+	background-color: var(--color-extra);
+	color: #000;
+}
+.bg-dark {
+	background-color: var(--color-dark);
+	color: #000;
+}
+/* text styling */
+.text-center {
+	text-align: center;
+}
+.text-xl {
+	text-transform: uppercase;
+	font-size: 50px;
+	letter-spacing: 6px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.text-lg {
+	text-transform: uppercase;
+	font-size: 40px;
+
+	margin-bottom: 20px;
+}
+.text-md {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.text-sm {
+	font-size: 19px;
+	margin-bottom: 20px;
+}
+/* padding */
+.py-sm {
+	padding: 10px;
+}
+.py-md {
+	padding: 20px;
+}
+.py-lg {
+	padding: 40px;
+}
+/* box */
+.box {
+	margin-bottom: 30px;
+}
+.box-inner {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+/* media queries */
+@media (max-width: 960px) {
+	.text-xl {
+		font-size: 30px;
+	}
+	.text-lg {
+		font-size: 25px;
+	}
+	.text-md {
+		font-size: 19px;
+	}
+}
+@media (min-width: 1440px) {
+	.box {
+		max-width: 1440px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
